@@ -48,7 +48,7 @@ Run the producer script to process images and the consumer script to display the
 
 ```shell
 python src/producer.py &
-streamlit run src/consumer.py
+streamlit run consumer.py
 ```
 
 ## Stopping the Application
@@ -60,7 +60,14 @@ To stop the application, follow these steps:
 To terminate the producer script, use the following command:
 
 ```shell
-kill -15 $(pidof python src/producer.py)
+kill -9 $(pidof python src/producer.py)
+```
+
+### Shutdown Docker Containers
+To stop all Docker containers used by the project:
+
+```shell
+docker-compose down
 ```
 
 ### Stop Consumer
