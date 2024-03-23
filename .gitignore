@@ -1,0 +1,4 @@
+.ipynb_checkpoints
+data/val2017
+data/processed_data
+__pycache__
